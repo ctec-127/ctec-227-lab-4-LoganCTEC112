@@ -1,11 +1,10 @@
-<!-- Might need to require functions.inc.php -->
 <div class="container-fluid" id="gallery">
         <form action="<?= $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <h1>Logan's Image Gallery</h1>
+                            <h1><?= $_SESSION['username']?>'s Image Gallery</h1>
                             <label class="control-label"></label>
                             <div class="preview-zone hidden">
                                 <div class="box box-solid">
@@ -47,7 +46,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 d-flex flex-wrap flex-row align-items-center justify-content-between">
-                    <?php display_images(); ?>
+                    <?php 
+                    require 'inc/functions.inc.php';
+                    display_images(); ?>
                 </div>
             </div>
         </div>

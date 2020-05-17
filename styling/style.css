@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 body {
     background: #C5F0BC;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 .container {
@@ -11,6 +13,7 @@ body {
     background: #ffffff;
     width: 100%;
 }
+
 .override {
     color: black;
     font-size: 1.1rem;
@@ -28,17 +31,21 @@ body {
     border-bottom: 1px solid #f4f4f4;
     margin-bottom: 10px;
 }
+
 footer {
     text-align: center;
 }
+
 .box-tools {
     position: absolute;
     right: 10px;
     top: 5px;
 }
+
 p {
     color: black;
 }
+
 .dropzone-wrapper {
     border: 2px dashed #91b0b3;
     color: #92b0b3;
@@ -120,4 +127,29 @@ img {
     padding: 15px 15px 40px 15px;
     border: 2px solid black;
     background: white;
+}
+
+.form-container {
+    height: 100vh;
+}
+
+label {
+    font-size: 1.11rem;
+}
+
+input[type="submit"], button[type="reset"], button[type="submit"] {
+    color: black;
+    padding: 12px;
+}
+
+button[type="reset"] {
+    float: right;
+}
+
+ul>li {
+    font-size: 1.1rem;
+}
+
+#showPassword {
+    font-size: .8rem;
 }
